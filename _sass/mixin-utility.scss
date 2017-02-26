@@ -1,0 +1,14 @@
+$browsers: '-webkit-', '-moz-', '-ms-', '-o-', '';
+
+@mixin calcs($style, $value){
+    @each $b in $browsers {
+        #{$style}: #{$b}calc(#{$value});
+    }
+    #{$style}: expression(#{$value});
+}
+
+@mixin cols($value){
+    @each $b in $browsers {
+        #{$b}columns: $value;
+    }
+}

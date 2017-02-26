@@ -1,0 +1,37 @@
+.list-2col {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+        -ms-columns: 2;
+            columns: 2;
+    list-style-position: inside;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+    @include media-query($on-palm){
+        float: none;
+        margin-top: $spacing-unit;
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+$sizes: 100, 200, 300, 400, 500, 600;
+@each $sz in $sizes{
+    .width-#{$sz}{
+        width: 0px + $sz;
+        @include media-query($on-palm){
+            width: 100%;
+        }
+    }
+    .height-#{$sz}{
+        height: 0px + $sz;
+    }
+}

@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<div class="home">
+
+
+  {{ content }}
+  <div class="home-top">
+      <div id="home-left">
+          <!-- Short information -->
+          <h1 class="home-heading" id="about">About</h1>
+          <div class="home-content">
+              <!--<h3 id="flags">🇦🇺 🇬🇧</h3>-->
+              <p>Bachelor of Computer Science with Distinction at RMIT University Melbourne.
+                  Coursework focused on application programming, scripting and databases.
+                  <br><br>My interests mainly focus on iOS mobile application development as well as cross platform game development. I highly enjoy these areas for the creative freedom and importance of visual-art/design in the creative process.
+              </p>
+          </div>
+      </div>
+      <div id="home-right">
+          <!-- Posts feed -->
+          <h1 class="home-heading">Recent posts</h1>
+          <div class="home-content">
+              <ul class="post-list">
+                {% for post in site.posts limit: page.max_posts %}
+                  <li>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                    <h2>
+                      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                    </h2>
+                  </li>
+                {% endfor %}
+              </ul>
+              {% if site.posts.size > 0 %}
+                <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+              {% else %}
+                <p class="no-posts">No posts available</p>
+              {% endif %}
+
+          </div>
+      </div>
+  </div>
+  <!-- Projects display -->
+  <h1 class="home-heading" id="projects">Projects</h1>
+  <div class="home-content">
+      <ul class="project-list">
+      {% for proj in site.projects %}
+        <li onclick="location.href='{{ proj.permalink }}';">
+            <div class="p-container">
+                <img class="p-image" onload="pimage_loaded(this)" src="{{ proj.image }}">
+            </div>
+            <div class="p-title">
+                <h3>
+                    {{ proj.title }}
+                </h3>
+            </div>
+            <div class="p-text">
+                <p>{{ proj.desc }}</p>
+            </div>
+            <div class="p-lang">
+                {% if site.data.icons[proj.language] %}
+                    {{ site.data.icons[proj.language] }}
+                {% else %}
+                    <p>* {{ proj.language | capitalize }} *</p>
+                {% endif %}
+            </div>
+        </li>
+      {% endfor %}
+      </ul>
+  </div>
+
+
+
+</div>

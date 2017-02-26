@@ -1,0 +1,140 @@
+.home-top {
+    display: inline-block;
+    overflow: hidden;
+}
+#home-left {
+    float: left;
+}
+#home-right {
+    float: right;
+    height: 100%;
+    @include media-query($on-palm) { float: none; }
+}
+#home-left, #home-right {
+    width: 49%;
+    @include media-query($on-palm) { width: 100%; }
+}
+
+#flags {
+    text-align: center;
+}
+.home-content {
+    font-size: 15px;
+    font-weight: 300;
+    padding: $spacing-unit/2;
+    margin-bottom: $spacing-unit;
+
+    background-color: $content-color;
+    background: -moz-linear-gradient(top, $content-color 0%, $clear-color 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $content-color), color-stop(100%,$clear-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, $content-color 0%, $clear-color 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, $content-color 0%, $clear-color 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, $content-color 0%, $clear-color 100%); /* IE10+ */
+    background: linear-gradient(to bottom, $content-color 0%, $clear-color 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.home-heading {
+    margin-bottom: 0;
+    padding: 5px;
+    //text-align: center;
+    font-size: 22px;
+    color: $header-color;
+    border-bottom: inset 1px lighten($header-color, 15%);
+}
+
+.project-list {
+    margin:  0 auto;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    position: relative;
+}
+
+.project-list li {
+    cursor: pointer;
+
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    margin: 10px;
+    height: 280px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    -webkit-transition: height 550ms ease-out;
+    -o-box-shadow:      0px 5px 10px #999;
+    -icab-box-shadow:   0px 5px 10px #999;
+    -khtml-box-shadow:  0px 5px 10px #999;
+    -moz-box-shadow:    0px 5px 10px #999;
+    -webkit-box-shadow: 0px 5px 10px #999;
+    box-shadow:         0px 5px 10px #999;
+}
+
+.project-list li:hover {
+    background: rgba(255, 255, 255, 0.65)
+}
+.project-list li:hover img{
+    opacity: 1.0;
+}
+$image-height: 55%;
+$title-height: 15%;
+.p-container {
+    position: relative;
+    height: $image-height;
+    width: 100%;
+    overflow: hidden;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url("images/rmit-menu.jpg");
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%);
+    background-repeat: no-repeat;
+}
+
+.p-image {
+    opacity: 0.7;
+    width: 100%;
+    left: 0; top: 0;
+    position: absolute;
+}
+.p-title {
+    height: $title-height;
+}
+.p-title h3{
+    font-size: 16px;
+    padding: 2px 5px;
+    font-weight: normal;
+    border-bottom: outset 1px $brand-color;
+}
+$icon-pad: 5px;
+.p-text {
+    height: 15%;
+    text-overflow: ellipsis;
+}
+.p-lang {
+    padding: $icon-pad;
+    height: 15%;
+}
+.p-lang svg {
+    height: calc(100% - #{$icon-pad}*2);
+    height: -webkit-calc(100% - #{$icon-pad}*2);
+    path {
+        fill: lighten(desaturate($brand-color, 5%), 20%);
+    }
+}
+
+.p-text p {
+    font-size: 13px;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+
+    height: 100%;
+}

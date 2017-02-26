@@ -7,12 +7,10 @@ image: /assets/images/projects/2-PackM/packm-logo.png
 desc: Cross platform (macOS, MSW, Linux) texture packing application.<br><br>In progress...
 ---
 
-## WORK IN PROGRESS...
+### WORK IN PROGRESS...
 {:.center}
 
 2D texture packer written in Python 3, using a framework called wxPython-phoenix.
-
-![Screenshot - macOS Sierra](/assets/images/projects/2-PackM/packm-screenshot.png){:.padding}
 
 #### Features:
 - Cross platform support (macOS, MSW, Linux).
@@ -22,3 +20,8 @@ desc: Cross platform (macOS, MSW, Linux) texture packing application.<br><br>In 
 - Pair-packing texture normals (on a identical sheet position).
 - English & German, language support. (expandable)
 {:.list-2col}
+
+[image]: /assets/images/projects/2-PackM/packm-screenshot.png
+
+[![Screenshot - macOS Sierra][image](Open full-size)][image]
+{:.padding}

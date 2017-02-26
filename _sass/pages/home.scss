@@ -40,7 +40,7 @@
     //text-align: center;
     font-size: 22px;
     color: $header-color;
-    border-bottom: inset 1px lighten($header-color, 15%);
+    border-bottom: inset 1px $header-color;
 }
 
 .project-list {

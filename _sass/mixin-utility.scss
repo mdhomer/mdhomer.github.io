@@ -12,3 +12,7 @@ $browsers: '-webkit-', '-moz-', '-ms-', '-o-', '';
         #{$b}columns: $value;
     }
 }
+
+@mixin lin-grad($from, $to){
+    
+}

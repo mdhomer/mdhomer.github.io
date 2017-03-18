@@ -21,7 +21,7 @@ $content-color:    rgba(240, 240, 240, 1.0);
 $clear-color:      rgba(0, 0, 0, 0);
 
 $text-color:       #111;
-$background-color: #f9f9f9;//#fdfdfd;
+$background-color: #ffffff;//#f9f9f9;//#fdfdfd;
 $brand-color:      #EC6917;
 $header-line-color:#eeeeee;
 $header-color:     lighten(desaturate($brand-color, 5%), 10%);
@@ -35,6 +35,8 @@ $content-width:    950px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
+
+$code-bg-color:    #fff2e7;
 
 // Minima also includes a mixin for defining media queries.
 // Use media queries like this:

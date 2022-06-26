@@ -30,6 +30,13 @@ github_url:  https://github.com/mdhomer
 stackoverflow_url: https://stackoverflow.com/users/4742817/mdhomer
 linkedin_url: http://www.linkedin.com/in/mitchell-homer-469742171
 
+insta_max_width: 500px
+insta_min_width: 100px
+insta_post_ids:
+  - "B2kXykLA9JI"
+  - "CdK5Mvfoz1o"
+  - "CTb0Cqyg5uL"
+
 collections:
   projects:
       output: true

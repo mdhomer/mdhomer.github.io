@@ -72,12 +72,21 @@
     box-shadow:         0px 5px 10px #999;
 }
 
+
+.instagram-media {
+    position: relative;
+    width: 100%;
+    top: -75px;
+    left: -30px;
+}
+
 .project-list li:hover {
     background: rgba(255, 255, 255, 0.65)
 }
 .project-list li:hover img{
     opacity: 1.0;
 }
+
 $image-height: 55%;
 $title-height: 15%;
 .p-container {

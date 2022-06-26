@@ -26,6 +26,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mdhomer
 stackoverflow_username: mdhomer
 stackoverflow_number: 4742817
+linkedin_url: http://www.linkedin.com/in/mitchell-homer-469742171
 
 collections:
   projects:

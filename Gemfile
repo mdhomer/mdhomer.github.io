@@ -32,3 +32,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
 #source 'https://rubygems.org'
 #gem 'github-pages', group: :jekyll_plugins
+
+gem "webrick", "~> 1.7"

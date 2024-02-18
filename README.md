@@ -1,3 +1,18 @@
+# How to setup for editing page:
+
+### Install ruby:
+https://jekyllrb.com/docs/installation/macos/
+
+### Install jekyll and current project dependencies:
+`gem install jekyll`
+`bundle install`
+
+### Run locally:
+`bundle exec jekyll serve --baseurl=""`
+
+Access at: `http://localhost:4000/`
+
+
 # minima
 
 *Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.

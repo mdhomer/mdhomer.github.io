@@ -13,7 +13,7 @@ Creating a clickable popup table-top element - Godot:
 
 
 #### Register mouse "entered/exited" into Area2D
-```
+```python
 var mouse_over : bool = false
 
 func _mouse_over(over):
@@ -30,7 +30,7 @@ func _ready():
 ```
 
 #### Register "pressed"/"released" on Area2D
-```
+```python
 var mouse_over : bool = false
 
 func _mouse_over(over):
@@ -51,7 +51,7 @@ func _unhandled_input(event):
 ```
 
 #### Popup Area2D abruptly
-```
+```python
 var _start_position : Vector2
 const _popup_offset : Vector2 = Vector2(0, 150)
 var mouse_over : bool = false
@@ -83,7 +83,7 @@ func _popup():
 ```
 
 #### Using Tween node to perform a smooth popup animation
-```
+```python
 extends Area2D
 
 var _start_position : Vector2

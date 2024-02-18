@@ -28,7 +28,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_url: jekyllrb
 github_url:  https://github.com/mdhomer
 stackoverflow_url: https://stackoverflow.com/users/4742817/mdhomer
-linkedin_url: http://www.linkedin.com/in/mitchell-homer-469742171
+linkedin_url: http://www.linkedin.com/in/mitchell-homer
 
 insta_max_width: 500px
 insta_min_width: 100px

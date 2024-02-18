@@ -21,7 +21,7 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
-about_content: I have a background in C++ infrastructure engineering, cloud automationBachelor of Computer Science with Distinction at RMIT University Melbourne. Coursework focused on application programming, scripting and databases.<br><br>My interests mainly focus on iOS mobile application development as well as cross platform game development. I highly enjoy these areas for the creative freedom and importance of visual-art/design in the creative process.
+about_content: Hey I'm Mitch and I have a background in C++ software development on infrastructure projects, as well as DevOps and cloud based infrastructure. In my free time I enjoy climbing, running, Dota2, photography and if I'm not too computer'ed out working on OpenSource tooling or some indie video game projects :)
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com

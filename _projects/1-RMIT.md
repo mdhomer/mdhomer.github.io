@@ -9,7 +9,7 @@ desc: iOS app developed as part of a RMIT summer project.
 ---
 
 <div>
-    <iframe src="https://gfycat.com/ifr/UnfitArtisticIndigowingedparrot" frameborder="0" scrolling="no" width="100%" height="100%" style="pointer-events:none" allowfullscreen=""></iframe>
+    <img src="https://i.imgur.com/SQWB7xU.gif" frameborder="0" scrolling="no" width="100%" height="100%" style="pointer-events:none" allowfullscreen="">
 </div>
 {:.float-right .width-300 .height-500}
 
